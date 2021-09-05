@@ -68,11 +68,15 @@ class BaseViewController: UIViewController {
     }
     
     func showMessage(message: String, numberOfLines: Int = 3, duration: TimeInterval = 3.0) {
-        ToastView.show(message: message, numberOfLines: numberOfLines, duration: duration)
+        DispatchQueue.main.async {
+            ToastView.show(message: message, numberOfLines: numberOfLines, duration: duration)
+        }
     }
     
     func showErrorMessage(error: NSError, numberOfLines: Int = 3, duration: TimeInterval = 3.0) {
-        ToastView.show(errorMessage: error, numberOfLines: numberOfLines, duration: duration)
+        DispatchQueue.main.async {
+            ToastView.show(errorMessage: error, numberOfLines: numberOfLines, duration: duration)
+        }
     }
     
     func startLoading() {

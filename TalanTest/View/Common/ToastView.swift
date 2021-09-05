@@ -85,30 +85,27 @@ class ToastView: UIView {
     }
     
     func show(message: String, numberOfLines: Int = 3, duration: TimeInterval = 3.0) {
-        DispatchQueue.main.async { [weak self] in
-            guard let self = self else { return }
-            let safeAreaInsets = UIApplication.shared.keyWindow?.safeAreaInsets ?? UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
-            
-            let maxMessageHeight: CGFloat = self.descriptionLabel.font.lineHeight * CGFloat(numberOfLines)
-            var messageHeight = message.height(withConstrainedWidth: UIScreen.main.bounds.width - (contentViewEdgeInsets.left + contentViewEdgeInsets.right + descriptionLabelEdgeInsets.left + descriptionLabelEdgeInsets.right), font: UIFont.systemFont(ofSize: 14.0, weight: .regular))
-            if numberOfLines != 0 {
-                messageHeight = maxMessageHeight >= messageHeight ? messageHeight : maxMessageHeight
-            }
-            
-            let toastHeight = messageHeight + contentViewEdgeInsets.top + contentViewEdgeInsets.bottom + descriptionLabelEdgeInsets.top + descriptionLabelEdgeInsets.bottom
-            
-            let rect = CGRect.init(x: 0.0 + safeAreaInsets.left,
-                                   y: UIScreen.main.bounds.height - safeAreaInsets.bottom - toastHeight,
-                                   width: UIScreen.main.bounds.width,
-                                   height: toastHeight)
-            self.frame = rect
-            
-            if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController, let topViewController = navigationController.topViewController {
-                if !topViewController.view.subviews.contains(where: { $0.isKind(of: ToastView.classForCoder())}) {
-                    topViewController.view.addSubview(self)
-                    self.animate(toast: self, isShow: true)
-                    self.startTimer(forDuration: duration)
-                }
+        let safeAreaInsets = UIApplication.shared.keyWindow?.safeAreaInsets ?? UIEdgeInsets.init(top: 0.0, left: 0.0, bottom: 0.0, right: 0.0)
+        
+        let maxMessageHeight: CGFloat = self.descriptionLabel.font.lineHeight * CGFloat(numberOfLines)
+        var messageHeight = message.height(withConstrainedWidth: UIScreen.main.bounds.width - (contentViewEdgeInsets.left + contentViewEdgeInsets.right + descriptionLabelEdgeInsets.left + descriptionLabelEdgeInsets.right), font: UIFont.systemFont(ofSize: 14.0, weight: .regular))
+        if numberOfLines != 0 {
+            messageHeight = maxMessageHeight >= messageHeight ? messageHeight : maxMessageHeight
+        }
+        
+        let toastHeight = messageHeight + contentViewEdgeInsets.top + contentViewEdgeInsets.bottom + descriptionLabelEdgeInsets.top + descriptionLabelEdgeInsets.bottom
+        
+        let rect = CGRect.init(x: 0.0 + safeAreaInsets.left,
+                               y: UIScreen.main.bounds.height - safeAreaInsets.bottom - toastHeight,
+                               width: UIScreen.main.bounds.width,
+                               height: toastHeight)
+        self.frame = rect
+        
+        if let navigationController = UIApplication.shared.keyWindow?.rootViewController as? UINavigationController, let topViewController = navigationController.topViewController {
+            if !topViewController.view.subviews.contains(where: { $0.isKind(of: ToastView.classForCoder())}) {
+                topViewController.view.addSubview(self)
+                self.animate(toast: self, isShow: true)
+                self.startTimer(forDuration: duration)
             }
         }
     }
@@ -139,11 +136,9 @@ class ToastView: UIView {
     // MARK: Static
     
     static func show(message: String, numberOfLines: Int = 3, duration: TimeInterval = 3.0) {
-        DispatchQueue.main.async {
-            let toastView = ToastView.init(frame: .zero)
-            toastView.configure(message: message, numberOfLines: numberOfLines)
-            toastView.show(message: message, numberOfLines: numberOfLines)
-        }
+        let toastView = ToastView.init(frame: .zero)
+        toastView.configure(message: message, numberOfLines: numberOfLines)
+        toastView.show(message: message, numberOfLines: numberOfLines)
     }
     
     static func show(errorMessage: NSError, numberOfLines: Int = 3, duration: TimeInterval = 3.0) {
