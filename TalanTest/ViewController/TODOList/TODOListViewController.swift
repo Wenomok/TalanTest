@@ -57,7 +57,7 @@ class TODOListViewController: BaseViewController {
             }
         }
         doneTasks.sort(by: { $0.doneDate ?? Date() > $1.doneDate ?? Date() })
-        newTasks.sort(by: { $0.createDate < $1.createDate })
+        newTasks.sort(by: { $0.createDate > $1.createDate })
         
         tableView.reloadData()
     }
@@ -90,6 +90,7 @@ class TODOListViewController: BaseViewController {
 extension TODOListViewController: DBManagerObserver {
     func added(item: TODOItem) {
         newTasks.append(item)
+        newTasks.sort(by: { $0.createDate > $1.createDate })
         
         reloadTableView()
     }
@@ -116,7 +117,7 @@ extension TODOListViewController: DBManagerObserver {
         } else {
             doneTasks.removeAll(where: { $0.createDate == item.createDate })
             newTasks.append(item)
-            newTasks.sort(by: { $0.createDate < $1.createDate })
+            newTasks.sort(by: { $0.createDate > $1.createDate })
         }
         
         reloadTableView()
