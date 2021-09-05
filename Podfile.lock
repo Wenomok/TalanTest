@@ -1,0 +1,28 @@
+PODS:
+  - Realm (10.7.2):
+    - Realm/Headers (= 10.7.2)
+  - Realm/Headers (10.7.2)
+  - RealmSwift (10.7.2):
+    - Realm (= 10.7.2)
+  - SDWebImage (5.10.4):
+    - SDWebImage/Core (= 5.10.4)
+  - SDWebImage/Core (5.10.4)
+
+DEPENDENCIES:
+  - RealmSwift (~> 10)
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Realm
+    - RealmSwift
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Realm: e523da9ade306c5ae87e85dc09fdef148d3e1cc1
+  RealmSwift: 4f6758c3adbdcc87f7b7777107226532a077f61c
+  SDWebImage: c666b97e1fa9c64b4909816a903322018f0a9c84
+
+PODFILE CHECKSUM: 37b70bc6a5cc95e1a6d3c293bd1b682a03aee8b9
+
+COCOAPODS: 1.10.1

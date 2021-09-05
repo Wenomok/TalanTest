@@ -1,0 +1,1002 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E7726BE8D51DEAEB9CA0128 /* Pods_TalanTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE2E54AD0057CD4C9395A58F /* Pods_TalanTestTests.framework */; };
+		3C0C52BFD73979DA674300F2 /* Pods_TalanTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 069E9BC40F390F31746A8FFD /* Pods_TalanTest.framework */; };
+		FA09CDF226E50025004E5CD7 /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09CDF126E50025004E5CD7 /* LoaderView.swift */; };
+		FA09CDF526E5006B004E5CD7 /* LoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA09CDF426E5006B004E5CD7 /* LoaderView.xib */; };
+		FA09CDF726E5010F004E5CD7 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09CDF626E5010F004E5CD7 /* UIView+Extension.swift */; };
+		FAC8520226E183AB0044A9F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8520126E183AB0044A9F5 /* AppDelegate.swift */; };
+		FAC8520626E183AB0044A9F5 /* TODOListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8520526E183AB0044A9F5 /* TODOListViewController.swift */; };
+		FAC8520B26E183AC0044A9F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC8520A26E183AC0044A9F5 /* Assets.xcassets */; };
+		FAC8520E26E183AC0044A9F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAC8520C26E183AC0044A9F5 /* LaunchScreen.storyboard */; };
+		FAC8521926E183AC0044A9F5 /* TalanTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8521826E183AC0044A9F5 /* TalanTestTests.swift */; };
+		FAC8522426E183AC0044A9F5 /* TalanTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8522326E183AC0044A9F5 /* TalanTestUITests.swift */; };
+		FAC8523826E18A6D0044A9F5 /* TODOListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8523726E18A6D0044A9F5 /* TODOListViewController.xib */; };
+		FAC8523A26E18AD60044A9F5 /* PageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8523926E18AD60044A9F5 /* PageCoordinator.swift */; };
+		FAC8523E26E18B6B0044A9F5 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8523C26E18B6B0044A9F5 /* SplashViewController.swift */; };
+		FAC8523F26E18B6B0044A9F5 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8523D26E18B6B0044A9F5 /* SplashViewController.xib */; };
+		FAC8524226E18BFA0044A9F5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8524126E18BFA0044A9F5 /* BaseViewController.swift */; };
+		FAC8524426E18F970044A9F5 /* TODOListViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8524326E18F970044A9F5 /* TODOListViewController+TableView.swift */; };
+		FAC8524826E1917F0044A9F5 /* TODOItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8524626E1917F0044A9F5 /* TODOItemTableViewCell.swift */; };
+		FAC8524926E1917F0044A9F5 /* TODOItemTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8524726E1917F0044A9F5 /* TODOItemTableViewCell.xib */; };
+		FAC8524D26E191D00044A9F5 /* TODOHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8524C26E191D00044A9F5 /* TODOHeaderView.swift */; };
+		FAC8525126E192E90044A9F5 /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8525026E192E90044A9F5 /* CheckboxButton.swift */; };
+		FAC8525526E199E30044A9F5 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8525426E199E30044A9F5 /* String+Extension.swift */; };
+		FAC8525926E19DBB0044A9F5 /* TODODetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8525726E19DBB0044A9F5 /* TODODetailedViewController.swift */; };
+		FAC8525A26E19DBB0044A9F5 /* TODODetailedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8525826E19DBB0044A9F5 /* TODODetailedViewController.xib */; };
+		FAE219E926E3960E00BEF3B7 /* NSError+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219E826E3960E00BEF3B7 /* NSError+Extension.swift */; };
+		FAE219EB26E3A49700BEF3B7 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219EA26E3A49700BEF3B7 /* ToastView.swift */; };
+		FAE219EE26E3B30600BEF3B7 /* PhotoGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219ED26E3B30600BEF3B7 /* PhotoGallery.swift */; };
+		FAE219F026E3B31E00BEF3B7 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAE219EF26E3B31E00BEF3B7 /* Photos.framework */; };
+		FAE219F226E3BAB000BEF3B7 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219F126E3BAB000BEF3B7 /* ImageData.swift */; };
+		FAE219F426E3BCCB00BEF3B7 /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219F326E3BCCB00BEF3B7 /* FileManager+Extension.swift */; };
+		FAE219F626E3BDE600BEF3B7 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE219F526E3BDE600BEF3B7 /* Data+Extension.swift */; };
+		FAF5C70E26E284C500DD1F59 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C70D26E284C500DD1F59 /* DBManager.swift */; };
+		FAF5C71126E2865200DD1F59 /* TODOItemDBObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C71026E2865200DD1F59 /* TODOItemDBObject.swift */; };
+		FAF5C71426E28A8200DD1F59 /* TODOItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C71326E28A8200DD1F59 /* TODOItem.swift */; };
+		FAF5C71626E291B900DD1F59 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C71526E291B900DD1F59 /* Array+Extension.swift */; };
+		FAF5C71826E293A200DD1F59 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF5C71726E293A200DD1F59 /* Date+Extension.swift */; };
+		FD46EE5586F6974649C38137 /* Pods_TalanTest_TalanTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D9B447F2CBB99E7F98CBB80 /* Pods_TalanTest_TalanTestUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAC8521526E183AC0044A9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC851F626E183AB0044A9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC851FD26E183AB0044A9F5;
+			remoteInfo = TalanTest;
+		};
+		FAC8522026E183AC0044A9F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAC851F626E183AB0044A9F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAC851FD26E183AB0044A9F5;
+			remoteInfo = TalanTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		069E9BC40F390F31746A8FFD /* Pods_TalanTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalanTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E07B9006B4D31C23F31F233 /* Pods-TalanTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTestTests.release.xcconfig"; path = "Target Support Files/Pods-TalanTestTests/Pods-TalanTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		25D96DDB93D9022F9FDB1515 /* Pods-TalanTest-TalanTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTest-TalanTestUITests.release.xcconfig"; path = "Target Support Files/Pods-TalanTest-TalanTestUITests/Pods-TalanTest-TalanTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2AC7AB01DBBEF23D395F10F7 /* Pods-TalanTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTest.release.xcconfig"; path = "Target Support Files/Pods-TalanTest/Pods-TalanTest.release.xcconfig"; sourceTree = "<group>"; };
+		3A2EE589C9A76FAE5F155634 /* Pods-TalanTest-TalanTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTest-TalanTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-TalanTest-TalanTestUITests/Pods-TalanTest-TalanTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D9B447F2CBB99E7F98CBB80 /* Pods_TalanTest_TalanTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalanTest_TalanTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C31F588D08CDEE7E23A6C79 /* Pods-TalanTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTestTests.debug.xcconfig"; path = "Target Support Files/Pods-TalanTestTests/Pods-TalanTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BE2E54AD0057CD4C9395A58F /* Pods_TalanTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TalanTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C374A5964635C9E2D2468A /* Pods-TalanTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TalanTest.debug.xcconfig"; path = "Target Support Files/Pods-TalanTest/Pods-TalanTest.debug.xcconfig"; sourceTree = "<group>"; };
+		FA09CDF126E50025004E5CD7 /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
+		FA09CDF426E5006B004E5CD7 /* LoaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoaderView.xib; sourceTree = "<group>"; };
+		FA09CDF626E5010F004E5CD7 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FAC851FE26E183AB0044A9F5 /* TalanTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalanTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC8520126E183AB0044A9F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAC8520526E183AB0044A9F5 /* TODOListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOListViewController.swift; sourceTree = "<group>"; };
+		FAC8520A26E183AC0044A9F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FAC8520D26E183AC0044A9F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FAC8520F26E183AC0044A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC8521426E183AC0044A9F5 /* TalanTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalanTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC8521826E183AC0044A9F5 /* TalanTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalanTestTests.swift; sourceTree = "<group>"; };
+		FAC8521A26E183AC0044A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC8521F26E183AC0044A9F5 /* TalanTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalanTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAC8522326E183AC0044A9F5 /* TalanTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalanTestUITests.swift; sourceTree = "<group>"; };
+		FAC8522526E183AC0044A9F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC8523726E18A6D0044A9F5 /* TODOListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODOListViewController.xib; sourceTree = "<group>"; };
+		FAC8523926E18AD60044A9F5 /* PageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCoordinator.swift; sourceTree = "<group>"; };
+		FAC8523C26E18B6B0044A9F5 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FAC8523D26E18B6B0044A9F5 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		FAC8524126E18BFA0044A9F5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAC8524326E18F970044A9F5 /* TODOListViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TODOListViewController+TableView.swift"; sourceTree = "<group>"; };
+		FAC8524626E1917F0044A9F5 /* TODOItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOItemTableViewCell.swift; sourceTree = "<group>"; };
+		FAC8524726E1917F0044A9F5 /* TODOItemTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODOItemTableViewCell.xib; sourceTree = "<group>"; };
+		FAC8524C26E191D00044A9F5 /* TODOHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOHeaderView.swift; sourceTree = "<group>"; };
+		FAC8525026E192E90044A9F5 /* CheckboxButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
+		FAC8525426E199E30044A9F5 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		FAC8525726E19DBB0044A9F5 /* TODODetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODODetailedViewController.swift; sourceTree = "<group>"; };
+		FAC8525826E19DBB0044A9F5 /* TODODetailedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TODODetailedViewController.xib; sourceTree = "<group>"; };
+		FAE219E826E3960E00BEF3B7 /* NSError+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSError+Extension.swift"; sourceTree = "<group>"; };
+		FAE219EA26E3A49700BEF3B7 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		FAE219ED26E3B30600BEF3B7 /* PhotoGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGallery.swift; sourceTree = "<group>"; };
+		FAE219EF26E3B31E00BEF3B7 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		FAE219F126E3BAB000BEF3B7 /* ImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
+		FAE219F326E3BCCB00BEF3B7 /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		FAE219F526E3BDE600BEF3B7 /* Data+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		FAF5C70D26E284C500DD1F59 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		FAF5C71026E2865200DD1F59 /* TODOItemDBObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOItemDBObject.swift; sourceTree = "<group>"; };
+		FAF5C71326E28A8200DD1F59 /* TODOItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODOItem.swift; sourceTree = "<group>"; };
+		FAF5C71526E291B900DD1F59 /* Array+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		FAF5C71726E293A200DD1F59 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAC851FB26E183AB0044A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C0C52BFD73979DA674300F2 /* Pods_TalanTest.framework in Frameworks */,
+				FAE219F026E3B31E00BEF3B7 /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521126E183AC0044A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7726BE8D51DEAEB9CA0128 /* Pods_TalanTestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521C26E183AC0044A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD46EE5586F6974649C38137 /* Pods_TalanTest_TalanTestUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		465ACA468B6B7E4603E7AB0A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9C374A5964635C9E2D2468A /* Pods-TalanTest.debug.xcconfig */,
+				2AC7AB01DBBEF23D395F10F7 /* Pods-TalanTest.release.xcconfig */,
+				3A2EE589C9A76FAE5F155634 /* Pods-TalanTest-TalanTestUITests.debug.xcconfig */,
+				25D96DDB93D9022F9FDB1515 /* Pods-TalanTest-TalanTestUITests.release.xcconfig */,
+				7C31F588D08CDEE7E23A6C79 /* Pods-TalanTestTests.debug.xcconfig */,
+				0E07B9006B4D31C23F31F233 /* Pods-TalanTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DAF3B79FCF9A159D5CB0FA05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAE219EF26E3B31E00BEF3B7 /* Photos.framework */,
+				069E9BC40F390F31746A8FFD /* Pods_TalanTest.framework */,
+				5D9B447F2CBB99E7F98CBB80 /* Pods_TalanTest_TalanTestUITests.framework */,
+				BE2E54AD0057CD4C9395A58F /* Pods_TalanTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA09CDF326E50052004E5CD7 /* LoaderView */ = {
+			isa = PBXGroup;
+			children = (
+				FA09CDF126E50025004E5CD7 /* LoaderView.swift */,
+				FA09CDF426E5006B004E5CD7 /* LoaderView.xib */,
+			);
+			path = LoaderView;
+			sourceTree = "<group>";
+		};
+		FAC851F526E183AB0044A9F5 = {
+			isa = PBXGroup;
+			children = (
+				FAC8520026E183AB0044A9F5 /* TalanTest */,
+				FAC8521726E183AC0044A9F5 /* TalanTestTests */,
+				FAC8522226E183AC0044A9F5 /* TalanTestUITests */,
+				FAC851FF26E183AB0044A9F5 /* Products */,
+				465ACA468B6B7E4603E7AB0A /* Pods */,
+				DAF3B79FCF9A159D5CB0FA05 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FAC851FF26E183AB0044A9F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAC851FE26E183AB0044A9F5 /* TalanTest.app */,
+				FAC8521426E183AC0044A9F5 /* TalanTestTests.xctest */,
+				FAC8521F26E183AC0044A9F5 /* TalanTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAC8520026E183AB0044A9F5 /* TalanTest */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8523126E189F50044A9F5 /* App */,
+				FAC8523426E18A1E0044A9F5 /* Model */,
+				FAC8523526E18A230044A9F5 /* View */,
+				FAC8523326E18A150044A9F5 /* ViewController */,
+				FAC8523226E189FF0044A9F5 /* Resources */,
+			);
+			path = TalanTest;
+			sourceTree = "<group>";
+		};
+		FAC8521726E183AC0044A9F5 /* TalanTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8521826E183AC0044A9F5 /* TalanTestTests.swift */,
+				FAC8521A26E183AC0044A9F5 /* Info.plist */,
+			);
+			path = TalanTestTests;
+			sourceTree = "<group>";
+		};
+		FAC8522226E183AC0044A9F5 /* TalanTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8522326E183AC0044A9F5 /* TalanTestUITests.swift */,
+				FAC8522526E183AC0044A9F5 /* Info.plist */,
+			);
+			path = TalanTestUITests;
+			sourceTree = "<group>";
+		};
+		FAC8523126E189F50044A9F5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8520126E183AB0044A9F5 /* AppDelegate.swift */,
+				FAC8523926E18AD60044A9F5 /* PageCoordinator.swift */,
+				FAC8520C26E183AC0044A9F5 /* LaunchScreen.storyboard */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FAC8523226E189FF0044A9F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8520A26E183AC0044A9F5 /* Assets.xcassets */,
+				FAC8520F26E183AC0044A9F5 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAC8523326E18A150044A9F5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8523B26E18B540044A9F5 /* Splash */,
+				FAC8523626E18A510044A9F5 /* TODOList */,
+				FAC8525626E19D8E0044A9F5 /* TODODetailed */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FAC8523426E18A1E0044A9F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAE219EC26E3B2F500BEF3B7 /* PhotoGallery */,
+				FAF5C71226E28A7600DD1F59 /* Objects */,
+				FAF5C70C26E284B500DD1F59 /* DB */,
+				FAC8525326E199D40044A9F5 /* Common */,
+				FAC8524026E18BEE0044A9F5 /* Extension */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FAC8523526E18A230044A9F5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8524F26E192D90044A9F5 /* Common */,
+				FAC8524526E191660044A9F5 /* TableView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAC8523626E18A510044A9F5 /* TODOList */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8520526E183AB0044A9F5 /* TODOListViewController.swift */,
+				FAC8524326E18F970044A9F5 /* TODOListViewController+TableView.swift */,
+				FAC8523726E18A6D0044A9F5 /* TODOListViewController.xib */,
+			);
+			path = TODOList;
+			sourceTree = "<group>";
+		};
+		FAC8523B26E18B540044A9F5 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8523C26E18B6B0044A9F5 /* SplashViewController.swift */,
+				FAC8523D26E18B6B0044A9F5 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FAC8524026E18BEE0044A9F5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8525426E199E30044A9F5 /* String+Extension.swift */,
+				FAF5C71526E291B900DD1F59 /* Array+Extension.swift */,
+				FAF5C71726E293A200DD1F59 /* Date+Extension.swift */,
+				FAE219E826E3960E00BEF3B7 /* NSError+Extension.swift */,
+				FAE219F326E3BCCB00BEF3B7 /* FileManager+Extension.swift */,
+				FAE219F526E3BDE600BEF3B7 /* Data+Extension.swift */,
+				FA09CDF626E5010F004E5CD7 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FAC8524526E191660044A9F5 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8524B26E191B90044A9F5 /* Sections */,
+				FAC8524A26E191AE0044A9F5 /* Cells */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
+		FAC8524A26E191AE0044A9F5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8524626E1917F0044A9F5 /* TODOItemTableViewCell.swift */,
+				FAC8524726E1917F0044A9F5 /* TODOItemTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAC8524B26E191B90044A9F5 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8524C26E191D00044A9F5 /* TODOHeaderView.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		FAC8524F26E192D90044A9F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FA09CDF326E50052004E5CD7 /* LoaderView */,
+				FAC8525026E192E90044A9F5 /* CheckboxButton.swift */,
+				FAE219EA26E3A49700BEF3B7 /* ToastView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAC8525326E199D40044A9F5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8524126E18BFA0044A9F5 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAC8525626E19D8E0044A9F5 /* TODODetailed */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8525726E19DBB0044A9F5 /* TODODetailedViewController.swift */,
+				FAC8525826E19DBB0044A9F5 /* TODODetailedViewController.xib */,
+			);
+			path = TODODetailed;
+			sourceTree = "<group>";
+		};
+		FAE219EC26E3B2F500BEF3B7 /* PhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+				FAE219ED26E3B30600BEF3B7 /* PhotoGallery.swift */,
+			);
+			path = PhotoGallery;
+			sourceTree = "<group>";
+		};
+		FAF5C70C26E284B500DD1F59 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5C70F26E2864100DD1F59 /* Objects */,
+				FAF5C70D26E284C500DD1F59 /* DBManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		FAF5C70F26E2864100DD1F59 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5C71026E2865200DD1F59 /* TODOItemDBObject.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		FAF5C71226E28A7600DD1F59 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				FAF5C71326E28A8200DD1F59 /* TODOItem.swift */,
+				FAE219F126E3BAB000BEF3B7 /* ImageData.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAC851FD26E183AB0044A9F5 /* TalanTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC8522826E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTest" */;
+			buildPhases = (
+				BECFA69285F3213FF3654569 /* [CP] Check Pods Manifest.lock */,
+				FAC851FA26E183AB0044A9F5 /* Sources */,
+				FAC851FB26E183AB0044A9F5 /* Frameworks */,
+				FAC851FC26E183AB0044A9F5 /* Resources */,
+				9F386E2F23838AD685F03264 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TalanTest;
+			productName = TalanTest;
+			productReference = FAC851FE26E183AB0044A9F5 /* TalanTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAC8521326E183AC0044A9F5 /* TalanTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC8522B26E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTestTests" */;
+			buildPhases = (
+				9259DB1015B02DE918C4FCB7 /* [CP] Check Pods Manifest.lock */,
+				FAC8521026E183AC0044A9F5 /* Sources */,
+				FAC8521126E183AC0044A9F5 /* Frameworks */,
+				FAC8521226E183AC0044A9F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC8521626E183AC0044A9F5 /* PBXTargetDependency */,
+			);
+			name = TalanTestTests;
+			productName = TalanTestTests;
+			productReference = FAC8521426E183AC0044A9F5 /* TalanTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FAC8521E26E183AC0044A9F5 /* TalanTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAC8522E26E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTestUITests" */;
+			buildPhases = (
+				C5A9906DBB3DEAABBFAB59FA /* [CP] Check Pods Manifest.lock */,
+				FAC8521B26E183AC0044A9F5 /* Sources */,
+				FAC8521C26E183AC0044A9F5 /* Frameworks */,
+				FAC8521D26E183AC0044A9F5 /* Resources */,
+				365CDCD99ECB32A9E4F941D4 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAC8522126E183AC0044A9F5 /* PBXTargetDependency */,
+			);
+			name = TalanTestUITests;
+			productName = TalanTestUITests;
+			productReference = FAC8521F26E183AC0044A9F5 /* TalanTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAC851F626E183AB0044A9F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					FAC851FD26E183AB0044A9F5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					FAC8521326E183AC0044A9F5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FAC851FD26E183AB0044A9F5;
+					};
+					FAC8521E26E183AC0044A9F5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = FAC851FD26E183AB0044A9F5;
+					};
+				};
+			};
+			buildConfigurationList = FAC851F926E183AB0044A9F5 /* Build configuration list for PBXProject "TalanTest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAC851F526E183AB0044A9F5;
+			productRefGroup = FAC851FF26E183AB0044A9F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAC851FD26E183AB0044A9F5 /* TalanTest */,
+				FAC8521326E183AC0044A9F5 /* TalanTestTests */,
+				FAC8521E26E183AC0044A9F5 /* TalanTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAC851FC26E183AB0044A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA09CDF526E5006B004E5CD7 /* LoaderView.xib in Resources */,
+				FAC8525A26E19DBB0044A9F5 /* TODODetailedViewController.xib in Resources */,
+				FAC8523826E18A6D0044A9F5 /* TODOListViewController.xib in Resources */,
+				FAC8524926E1917F0044A9F5 /* TODOItemTableViewCell.xib in Resources */,
+				FAC8520E26E183AC0044A9F5 /* LaunchScreen.storyboard in Resources */,
+				FAC8520B26E183AC0044A9F5 /* Assets.xcassets in Resources */,
+				FAC8523F26E18B6B0044A9F5 /* SplashViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521226E183AC0044A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521D26E183AC0044A9F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		365CDCD99ECB32A9E4F941D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalanTest-TalanTestUITests/Pods-TalanTest-TalanTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalanTest-TalanTestUITests/Pods-TalanTest-TalanTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalanTest-TalanTestUITests/Pods-TalanTest-TalanTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9259DB1015B02DE918C4FCB7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalanTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F386E2F23838AD685F03264 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalanTest/Pods-TalanTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TalanTest/Pods-TalanTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TalanTest/Pods-TalanTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BECFA69285F3213FF3654569 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalanTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5A9906DBB3DEAABBFAB59FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TalanTest-TalanTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAC851FA26E183AB0044A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8524226E18BFA0044A9F5 /* BaseViewController.swift in Sources */,
+				FAC8524D26E191D00044A9F5 /* TODOHeaderView.swift in Sources */,
+				FA09CDF226E50025004E5CD7 /* LoaderView.swift in Sources */,
+				FAC8525926E19DBB0044A9F5 /* TODODetailedViewController.swift in Sources */,
+				FAE219F226E3BAB000BEF3B7 /* ImageData.swift in Sources */,
+				FAC8520626E183AB0044A9F5 /* TODOListViewController.swift in Sources */,
+				FAE219F426E3BCCB00BEF3B7 /* FileManager+Extension.swift in Sources */,
+				FAF5C71426E28A8200DD1F59 /* TODOItem.swift in Sources */,
+				FAF5C71826E293A200DD1F59 /* Date+Extension.swift in Sources */,
+				FAC8524426E18F970044A9F5 /* TODOListViewController+TableView.swift in Sources */,
+				FAE219EE26E3B30600BEF3B7 /* PhotoGallery.swift in Sources */,
+				FAF5C71626E291B900DD1F59 /* Array+Extension.swift in Sources */,
+				FAC8525126E192E90044A9F5 /* CheckboxButton.swift in Sources */,
+				FAC8520226E183AB0044A9F5 /* AppDelegate.swift in Sources */,
+				FAF5C71126E2865200DD1F59 /* TODOItemDBObject.swift in Sources */,
+				FAF5C70E26E284C500DD1F59 /* DBManager.swift in Sources */,
+				FAC8523A26E18AD60044A9F5 /* PageCoordinator.swift in Sources */,
+				FAC8523E26E18B6B0044A9F5 /* SplashViewController.swift in Sources */,
+				FA09CDF726E5010F004E5CD7 /* UIView+Extension.swift in Sources */,
+				FAC8525526E199E30044A9F5 /* String+Extension.swift in Sources */,
+				FAC8524826E1917F0044A9F5 /* TODOItemTableViewCell.swift in Sources */,
+				FAE219F626E3BDE600BEF3B7 /* Data+Extension.swift in Sources */,
+				FAE219EB26E3A49700BEF3B7 /* ToastView.swift in Sources */,
+				FAE219E926E3960E00BEF3B7 /* NSError+Extension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521026E183AC0044A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8521926E183AC0044A9F5 /* TalanTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAC8521B26E183AC0044A9F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAC8522426E183AC0044A9F5 /* TalanTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAC8521626E183AC0044A9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC851FD26E183AB0044A9F5 /* TalanTest */;
+			targetProxy = FAC8521526E183AC0044A9F5 /* PBXContainerItemProxy */;
+		};
+		FAC8522126E183AC0044A9F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAC851FD26E183AB0044A9F5 /* TalanTest */;
+			targetProxy = FAC8522026E183AC0044A9F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAC8520C26E183AC0044A9F5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAC8520D26E183AC0044A9F5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAC8522626E183AC0044A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAC8522726E183AC0044A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAC8522926E183AC0044A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9C374A5964635C9E2D2468A /* Pods-TalanTest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FAC8522A26E183AC0044A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC7AB01DBBEF23D395F10F7 /* Pods-TalanTest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTest/Resources/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		FAC8522C26E183AC0044A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C31F588D08CDEE7E23A6C79 /* Pods-TalanTestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalanTest.app/TalanTest";
+			};
+			name = Debug;
+		};
+		FAC8522D26E183AC0044A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E07B9006B4D31C23F31F233 /* Pods-TalanTestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalanTest.app/TalanTest";
+			};
+			name = Release;
+		};
+		FAC8522F26E183AC0044A9F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A2EE589C9A76FAE5F155634 /* Pods-TalanTest-TalanTestUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalanTest;
+			};
+			name = Debug;
+		};
+		FAC8523026E183AC0044A9F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25D96DDB93D9022F9FDB1515 /* Pods-TalanTest-TalanTestUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZK943LB6V2;
+				INFOPLIST_FILE = TalanTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vivshin.TalanTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TalanTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAC851F926E183AB0044A9F5 /* Build configuration list for PBXProject "TalanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8522626E183AC0044A9F5 /* Debug */,
+				FAC8522726E183AC0044A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC8522826E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8522926E183AC0044A9F5 /* Debug */,
+				FAC8522A26E183AC0044A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC8522B26E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8522C26E183AC0044A9F5 /* Debug */,
+				FAC8522D26E183AC0044A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAC8522E26E183AC0044A9F5 /* Build configuration list for PBXNativeTarget "TalanTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAC8522F26E183AC0044A9F5 /* Debug */,
+				FAC8523026E183AC0044A9F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FAC851F626E183AB0044A9F5 /* Project object */;
+}
